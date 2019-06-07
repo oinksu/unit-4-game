@@ -8,6 +8,11 @@ body{
     width: 960px;
 }
 
+.conan{
+    height: 230px;
+    width: 350px;
+}
+
 .crystal-image{
     height: 100px;
     width: 100px;
