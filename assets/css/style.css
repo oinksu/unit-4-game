@@ -1,3 +1,8 @@
+body{
+    background-image: url('../images/conan.png');
+    background-size: 960px;
+}
+
 .crystal-image{
     height: 100px;
     width: 100px;
