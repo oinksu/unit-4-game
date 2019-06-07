@@ -1,4 +1,4 @@
-// Initialise
+//variables and stuff
 var randomNumber;
 var arrCrystalValues;
 var winCounter = 0;
@@ -7,7 +7,7 @@ var gameActive = false;
 
 var arrCrystals = ["assets/images/crystal0.jpg","assets/images/crystal1.jpg","assets/images/crystal2.jpg","assets/images/crystal3.jpg"];
 
-// Start of Functions
+// Start 
 function setGame() {
   gameActive = true;
   randomNumber = generateRandomNumber();
@@ -22,13 +22,14 @@ function setGame() {
 
 
 function generateRandomArray() {
-  // Random number between 1 to 12
+  
+  // Random 1 to 12
   var arrNum = [];
   for (var i = 0; i < arrCrystals.length; i++) {
     arrNum.push(Math.floor(Math.random() * 12 + 1));
   }
 
-  // Console log values associated with each crystal
+  // Console log crystal values
   for (var i = 0; i < arrNum.length; i++) {
     console.log("crystal value " + (i + 1) + " : " + arrNum[i]);
   }
@@ -36,7 +37,8 @@ function generateRandomArray() {
 }
 
 function generateRandomNumber() {
-  // Random number between 19 to 120
+  
+  // Random 19 to 120
   return Math.floor(Math.random() * 120 + 19);
 }
 
@@ -56,16 +58,21 @@ function setTotalDisplay(dataVal) {
   $("#totalDisplay").text(total);
   if (total >= randomNumber) {
     if (total > randomNumber) {
-      // Lose
+      
+      
+      // Loze
       $("#messageDisplay").text("You are Lozer face !");
       lossCounter++;
       $("#lossDisplay").text(lossCounter);
     } else {
+      
+      
       // Win
-      $("#messageDisplay").text("You Win ze power of math !");
+      $("#messageDisplay").text("You Winz ze power of math !");
       winCounter++;
       $("#winDisplay").text(winCounter);
     }
+    
     // add button
     var $btn = $("<button>");
     $btn.addClass("play-button");
@@ -76,6 +83,7 @@ function setTotalDisplay(dataVal) {
     gameActive=false;
   }
 }
+
 // End Of Functions
 
 $(document).ready(function () {

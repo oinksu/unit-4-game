@@ -14,3 +14,13 @@ body{
     padding: 5px;
     background-color: lightgray;
   }
+
+  .card-header{
+    color: white;
+    background-color: black;
+    border-width: 3px;
+    border-color: black;
+    border-style: dashed;
+  }
+
+  
