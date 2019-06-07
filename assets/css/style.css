@@ -1,6 +1,11 @@
+*{
+    box-sizing: border-box;
+  }
+
 body{
     background-image: url('../images/conan.png');
-    background-size: 960px;
+    font-family: 'Lucida Console', monospace;
+    width: 960px;
 }
 
 .crystal-image{
@@ -13,6 +18,7 @@ body{
     margin-left: 25px;
     padding: 5px;
     background-color: lightgray;
+    font-size: 15px;
   }
 
   .card-header{
