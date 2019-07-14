@@ -30,6 +30,9 @@ function generateRandomArray() {
   }
 
   // Console log crystal values
+
+  
+
   for (var i = 0; i < arrNum.length; i++) {
     console.log("crystal value " + (i + 1) + " : " + arrNum[i]);
   }
