@@ -5,7 +5,7 @@ var winCounter = 0;
 var lossCounter = 0;
 var gameActive = false;
 
-var arrCrystals = ["assets/images/crystal0.jpg","assets/images/crystal1.jpg","assets/images/crystal2.jpg","assets/images/crystal3.jpg"];
+var arrCrystals = ["assets/images/crystal0.jpg","assets/images/conan.jpg","assets/images/crystal2.jpg","assets/images/crystal3.jpg"];
 
 // Start 
 function setGame() {
